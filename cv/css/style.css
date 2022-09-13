@@ -1,0 +1,102 @@
+/* Jag har använt * för att göra så att det som jag deklarerar i den gäller allt. I denna har jag satt fonten och dess storlek, och gjort så
+att all text är centrerad, och att deras postion är relativ, and make it a border box so that I can add margin and padding as I like.
+And also clears all elemetns from the float left element */
+* {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    clear: left;
+}
+
+/* This only makes it so the background of the website has a gradient from the colors I specify.*/
+body {
+    background: linear-gradient(90deg, rebeccapurple, #AE82CC);
+}
+
+/* h1 controls the size the font size of the h1 headers, and gives it a margin of 15% on the top of it, due to me wanting to be in the middle
+of the front page*/
+h1 {
+    font-size: 165%;
+    margin-top: 15%;
+}
+
+/* this just controls the font size of the h2 headers*/
+h2 {
+    font-size: 130%;
+}
+
+/* This makes it so the navigation bar links line up as they should, and gives the lines that are on the bottom and top of it.*/
+nav {
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rebeccapurple;
+    border-top: 1px solid rebeccapurple;
+}
+
+/* Makes it so that the links text color is black, and centerd,. and gives them thier padding and margin.*/
+a {
+    color: black;
+    text-align: center;
+    padding: 2px 20px;
+    margin: 0px 10px;
+}
+/* Gives the effect of when you hover over the links that they go through a animation and how long.*/
+
+a:hover {
+    animation-name: navhover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+
+}
+
+/* This dictates what the animation that happen to the links is*/
+@keyframes navhover{
+    100% {
+        background-color: rebeccapurple;
+    }
+}
+
+/* Controls the imges width and height so they dont cover the whole page.*/
+img {
+    width: 60%;
+    height: 15%;
+}
+
+/* Gives the line hight to the paragrphs and the spacing between them and the topic header.*/
+p {
+    margin: auto 15%;
+    line-height: 30px;
+}
+
+/* Is a class that changes a specific images sizing since it is taller than wide, unlike the otehr images.*/
+.bad-size {
+    width: 50%;
+    height: 35%;
+}
+
+/* This is so the footer has the line above it and makes it so ther's space between it and the paragraphs*/
+footer {
+    text-align: center;
+    margin-top: 10%;
+    padding-top: 15px;
+    border-top: 1px solid rebeccapurple;
+    position: relative;
+}
+
+/* this gives the list in the course page it looks*/
+ul li {
+    position: relative;
+    text-align: center;
+    list-style-type: none;
+}
+
+/* And this changes the line hight and font size of the text on lists. Is after the other one becuase I didnät see the problem untill afterwards*/
+li {
+    line-height: 35px;
+    font-size: 105%;
+}
